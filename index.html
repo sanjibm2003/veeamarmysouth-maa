@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Veeam Army 2026 South — Chennai | Nomination Form</title>
-<meta name="description" content="Nominate yourself or a colleague for Veeam Army 2026 South — Chennai training.">
-<meta property="og:title" content="Veeam Army 2026 South — Chennai | Nomination Form">
-<meta property="og:description" content="Register for the Veeam Army 2026 South — Chennai training program.">
+<title>Veeam Army 2026 Chennai | Nomination Form</title>
+<meta name="description" content="Nominate yourself or a colleague for Veeam Army 2026 Chennai training.">
+<meta property="og:title" content="Veeam Army 2026 Chennai | Nomination Form">
+<meta property="og:description" content="Register for the Veeam Army 2026 Chennai training program.">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -290,8 +290,8 @@ footer a{color:var(--dark-mineral);text-decoration:none;border-bottom:1px solid 
       <span class="pill" id="statusPill">Nominations open</span>
     </div>
 
-    <h1>Veeam Army 2026<br><span class="grad">South — Chennai</span></h1>
-    <p class="lede">A hands-on enablement program for partner engineers across the South region, running <strong>27 &amp; 28 August 2026</strong>. Submit your nomination below — places are limited and confirmed on a first-reviewed basis.</p>
+    <h1>Veeam Army 2026<br><span class="grad">Chennai</span></h1>
+    <p class="lede">A hands-on enablement program for partner engineers across the region, running <strong>27 &amp; 28 August 2026</strong>. Submit your nomination below — places are limited and confirmed on a first-reviewed basis.</p>
 
     <div class="facts">
       <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 11h18"/></svg> 27 &amp; 28 August 2026</span>
@@ -351,7 +351,7 @@ footer a{color:var(--dark-mineral);text-decoration:none;border-bottom:1px solid 
     <div class="success" id="successState">
       <div class="tick"><svg viewBox="0 0 24 24"><path d="M4 12.5l5.5 5.5L20 7"/></svg></div>
       <h2>Nomination received</h2>
-      <p>Thank you — your nomination for <strong>Veeam Army 2026 South — Chennai</strong> has been recorded. Places are limited, so nominations are reviewed before seats are confirmed. The program team will email you at the address you provided with your confirmed place, the venue and joining details ahead of the training on <strong>27 &amp; 28 August 2026</strong>.</p>
+      <p>Thank you — your nomination for <strong>Veeam Army 2026 Chennai</strong> has been recorded. Places are limited, so nominations are reviewed before seats are confirmed. The program team will email you at the address you provided with your confirmed place, the venue and joining details ahead of the training on <strong>27 &amp; 28 August 2026</strong>.</p>
       <button class="linkbtn" type="button" onclick="location.reload()">Submit another nomination</button>
     </div>
 
@@ -359,7 +359,7 @@ footer a{color:var(--dark-mineral);text-decoration:none;border-bottom:1px solid 
     <div class="closed" id="closedState">
       <div class="closed-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div>
       <h2>Nominations are now closed</h2>
-      <p>Registration for <strong>Veeam Army 2026 South — Chennai</strong> closed on <span data-deadline-text></span>. If you still need to be considered, contact <a href="mailto:s.mondal@veeam.com">s.mondal@veeam.com</a> directly.</p>
+      <p>Registration for <strong>Veeam Army 2026 Chennai</strong> closed on <span data-deadline-text></span>. If you still need to be considered, contact <a href="mailto:s.mondal@veeam.com">s.mondal@veeam.com</a> directly.</p>
     </div>
 
     <!-- ============ FORM ============
@@ -493,7 +493,7 @@ footer a{color:var(--dark-mineral);text-decoration:none;border-bottom:1px solid 
 </main>
 
 <footer>
-  Veeam Army 2026 South — Chennai &nbsp;·&nbsp; Partner enablement program &nbsp;·&nbsp; Questions? <a href="mailto:s.mondal@veeam.com">s.mondal@veeam.com</a>
+  Veeam Army 2026 Chennai &nbsp;·&nbsp; Partner enablement program &nbsp;·&nbsp; Questions? <a href="mailto:s.mondal@veeam.com">s.mondal@veeam.com</a>
 </footer>
 
 
@@ -518,7 +518,7 @@ footer a{color:var(--dark-mineral);text-decoration:none;border-bottom:1px solid 
 */
 const CONFIG = {
   MODE: 'live',
-  ENDPOINT: 'https://script.google.com/macros/s/AKfycbyRlqAKkHNiEYWT3hFX29Ica4fuqxCL8LVSNO8x-Us46Gg-pQYtWnqD2mB8jb8VPDmX/exec'
+  ENDPOINT: 'PASTE_YOUR_CHENNAI_APPS_SCRIPT_URL_HERE'
 };
 
 /* ---------------- EVENT DATES — change these if the schedule moves ----------------
@@ -649,7 +649,7 @@ function collect(){
   data._gotcha = (fd.get('_gotcha') || '').toString();
   TEXT_FIELDS.forEach(k => { data[k] = (fd.get(k) || '').toString().trim(); });
   data.consent     = form.elements.consent.checked ? 'Yes' : 'No';
-  data.training    = 'Veeam Army 2026 - South Chennai';
+  data.training    = 'Veeam Army 2026 - Chennai';
   data.submittedAt = new Date().toISOString();
   return data;
 }
