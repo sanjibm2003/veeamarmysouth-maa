@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veeam Army 2026 South — Chennai | Nomination Form</title>
+<meta name="description" content="Nominate yourself or a colleague for Veeam Army 2026 South — Chennai training.">
+<meta property="og:title" content="Veeam Army 2026 South — Chennai | Nomination Form">
+<meta property="og:description" content="Register for the Veeam Army 2026 South — Chennai training program.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   CONFIG NOTE: All submission settings live in the JavaScript
+   block at the bottom of this file. Search for "CONFIG".
+   ============================================================ */
+:root{
+  /* Official Veeam palette — Brand Resource Center */
+  --viridis:#00D15F;      /* Primary brand green */
+  --mint:#32F26F;
+  --lime:#9CFFA3;
+  --pine:#007F49;
+  --sol:#FFD839;          /* Official secondary — used for the deadline notice */
+  --teal:#00FFD8;         /* Bounce mark gradient end */
+  --black:#000000;
+  --dark-mineral:#505861;
+  --french-grey:#ADACAF;
+  --fog:#F0F0F0;
+  --ignis:#ED2B3D;
+  --font:'Inter','Segoe UI',Calibri,system-ui,-apple-system,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--font);
+  background:var(--fog);
+  color:var(--black);
+  -webkit-font-smoothing:antialiased;
+  line-height:1.55;
+}
+
+/* ---------- HERO ---------- */
+.hero{
+  position:relative;overflow:hidden;color:#fff;
+  padding:34px 24px 92px;
+  background:
+    radial-gradient(115% 130% at 90% 115%, rgba(0,209,95,.55) 0%, rgba(0,209,95,0) 58%),
+    radial-gradient(90% 120% at 8% -25%, rgba(0,255,216,.20) 0%, rgba(0,255,216,0) 60%),
+    #000000;
+}
+.hero::after{
+  content:"";position:absolute;inset:auto -10% -60% 55%;
+  height:420px;border-radius:50%;
+  background:radial-gradient(circle, rgba(50,242,111,.22) 0%, rgba(50,242,111,0) 70%);
+  pointer-events:none;
+}
+.wrap{max-width:880px;margin:0 auto;position:relative;z-index:2}
+.brandbar{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+/* --- Official Veeam logo --- */
+.logo{display:flex;align-items:center;text-decoration:none}
+.logo svg{height:34px;width:auto;display:block}
+.pill{
+  display:inline-block;padding:6px 14px;border-radius:999px;
+  border:1px solid rgba(255,255,255,.35);
+  font-size:12.5px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;
+  background:rgba(255,255,255,.08);
+}
+.hero h1{
+  margin:40px 0 0;font-size:clamp(34px,6vw,60px);line-height:1.03;
+  font-weight:800;letter-spacing:-.03em;
+}
+.hero h1 .grad{
+  background:linear-gradient(90deg,var(--viridis) 0%,var(--teal) 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hero p.lede{
+  margin-top:18px;max-width:620px;font-size:clamp(15px,2vw,18px);
+  color:rgba(255,255,255,.82);
+}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.fact{
+  display:flex;align-items:center;gap:8px;
+  padding:9px 15px;border-radius:999px;
+  background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);
+  font-size:13.5px;font-weight:500;
+}
+.fact svg{width:15px;height:15px;flex:none;stroke:var(--mint)}
+
+/* ---------- CARD ---------- */
+main{max-width:880px;margin:-58px auto 0;padding:0 24px 70px;position:relative;z-index:3}
+.card{
+  background:#fff;border:1px solid #E4E4E6;border-radius:20px;
+  box-shadow:0 18px 50px rgba(0,0,0,.10);
+  padding:clamp(24px,4vw,42px);
+}
+.section{padding-top:6px}
+.section + .section{margin-top:34px;border-top:1px solid #E4E4E6;padding-top:30px}
+.section-head{display:flex;align-items:center;gap:12px;margin-bottom:20px}
+.step{
+  width:28px;height:28px;flex:none;border-radius:8px;
+  background:linear-gradient(135deg,var(--viridis),var(--teal));
+  color:#00351a;font-weight:800;font-size:14px;display:grid;place-items:center;
+}
+.section-head h2{
+  font-size:15px;font-weight:700;letter-spacing:.10em;text-transform:uppercase;color:var(--black);
+}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.full{grid-column:1/-1}
+@media(max-width:640px){.grid{grid-template-columns:1fr}}
+
+label,.grouplabel{display:block;font-size:13.5px;font-weight:600;color:var(--black);margin-bottom:7px}
+label .req,.grouplabel .req{color:var(--ignis);margin-left:2px}
+.hint{display:block;font-weight:400;font-size:12px;color:var(--french-grey);margin-top:3px}
+input[type=text],input[type=email],input[type=tel],select,textarea{
+  width:100%;padding:12px 14px;font-family:var(--font);font-size:15px;color:var(--black);
+  background:#fff;border:1.5px solid #DCDCDE;border-radius:10px;
+  transition:border-color .15s, box-shadow .15s;
+}
+textarea{min-height:88px;resize:vertical}
+select{appearance:none;cursor:pointer;
+  background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' stroke='%23505861' stroke-width='2'%3E%3Cpath d='M5 8l5 5 5-5'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 12px center;padding-right:40px;
+}
+input:focus,select:focus,textarea:focus{
+  outline:none;border-color:var(--viridis);box-shadow:0 0 0 3px rgba(0,209,95,.18);
+}
+input.invalid,select.invalid,textarea.invalid{border-color:var(--ignis);box-shadow:0 0 0 3px rgba(237,43,61,.14)}
+.err{display:none;color:var(--ignis);font-size:12.5px;font-weight:500;margin-top:5px}
+.err.show{display:block}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+
+/* ---------- AGENDA ---------- */
+.agenda-card{
+  background:#fff;border:1px solid #E4E4E6;border-radius:20px;
+  box-shadow:0 18px 50px rgba(0,0,0,.10);
+  padding:clamp(24px,4vw,38px);margin-bottom:22px;
+}
+.agenda-head{display:flex;align-items:baseline;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:24px}
+.agenda-head h2{
+  font-size:15px;font-weight:700;letter-spacing:.10em;text-transform:uppercase;color:var(--black);
+}
+.agenda-head span{font-size:13.5px;color:var(--french-grey)}
+.days{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media(max-width:640px){.days{grid-template-columns:1fr}}
+.day{border:1px solid #E4E4E6;border-radius:14px;padding:20px;background:var(--fog)}
+.day-tag{
+  display:inline-block;padding:5px 13px;border-radius:999px;margin-bottom:12px;
+  background:linear-gradient(90deg,var(--viridis),var(--mint));
+  color:#00351a;font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;
+}
+.day h3{font-size:18px;font-weight:800;color:var(--black);letter-spacing:-.01em;margin-bottom:4px}
+.day .date{font-size:13px;color:var(--dark-mineral);margin-bottom:14px}
+.day ol{list-style:none;counter-reset:topic}
+.day ol li{
+  counter-increment:topic;position:relative;padding:9px 0 9px 34px;
+  font-size:14.5px;color:var(--black);border-top:1px solid #E4E4E6;
+}
+.day ol li:first-child{border-top:0}
+.day ol li::before{
+  content:counter(topic);position:absolute;left:0;top:9px;
+  width:22px;height:22px;border-radius:6px;background:#fff;border:1px solid var(--light-grey,#DCDCDE);
+  color:var(--pine);font-size:12px;font-weight:800;display:grid;place-items:center;
+}
+.day .tbd{
+  padding:14px 0 4px;font-size:14px;color:var(--dark-mineral);font-style:italic;
+}
+
+/* ---------- DEADLINE NOTICE ---------- */
+.deadline{
+  display:flex;align-items:flex-start;gap:13px;
+  padding:15px 18px;margin-bottom:28px;border-radius:12px;
+  background:rgba(255,216,57,.16);border:1px solid rgba(255,216,57,.55);
+  border-left:4px solid var(--sol);
+}
+.deadline svg{width:20px;height:20px;flex:none;margin-top:1px;stroke:#8a6d00;fill:none;stroke-width:2}
+.deadline-body{font-size:14px;color:#5c4900;line-height:1.5}
+.deadline-body strong{color:#3d3000;font-weight:700}
+.countdown{
+  display:inline-block;margin-left:8px;padding:2px 10px;border-radius:999px;
+  background:#3d3000;color:#FFD839;font-size:12px;font-weight:700;
+  letter-spacing:.02em;white-space:nowrap;vertical-align:1px;
+}
+.countdown.urgent{background:var(--ignis);color:#fff}
+
+/* ---------- VENUE NOTE ---------- */
+.venue{
+  display:flex;align-items:flex-start;gap:13px;
+  padding:14px 18px;margin:-16px 0 28px;border-radius:12px;
+  background:var(--fog);border:1px solid #E4E4E6;
+  font-size:14px;color:var(--dark-mineral);line-height:1.5;
+}
+.venue svg{width:19px;height:19px;flex:none;margin-top:1px;stroke:var(--pine);fill:none;stroke-width:2}
+.venue strong{color:var(--black);font-weight:700}
+.venue a{margin-left:8px;color:var(--pine);font-weight:600;text-decoration:none;white-space:nowrap}
+.venue a:hover{text-decoration:underline}
+
+/* ---------- CLOSED STATE ---------- */
+.closed{display:none;text-align:center;padding:26px 8px 12px}
+.closed.show{display:block}
+.closed-icon{
+  width:76px;height:76px;margin:0 auto 22px;border-radius:50%;
+  background:var(--fog);border:2px solid var(--light-grey,#DCDCDE);
+  display:grid;place-items:center;
+}
+.closed-icon svg{width:34px;height:34px;stroke:var(--dark-mineral);stroke-width:2.2;fill:none}
+.closed h2{font-size:25px;font-weight:800;color:var(--black);letter-spacing:-.02em}
+.closed p{margin-top:12px;color:var(--dark-mineral);font-size:15.5px;max-width:500px;margin-left:auto;margin-right:auto}
+
+.checkline{display:flex;align-items:flex-start;gap:11px;font-size:14px;color:var(--dark-mineral);margin-top:4px}
+.checkline input{width:18px;height:18px;flex:none;margin-top:2px;accent-color:var(--viridis);cursor:pointer}
+.checkline label{margin:0;font-weight:500;font-size:14px;color:var(--dark-mineral);cursor:pointer}
+
+.chips{display:flex;flex-wrap:wrap;gap:10px;padding:2px;border-radius:12px}
+.chips.invalid-group{box-shadow:0 0 0 3px rgba(237,43,61,.14);outline:1.5px solid var(--ignis)}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;width:0;height:0}
+.chip span{
+  display:inline-block;padding:10px 20px;border-radius:999px;cursor:pointer;
+  border:1.5px solid #DCDCDE;font-size:14.5px;font-weight:500;color:var(--dark-mineral);
+  transition:all .15s;user-select:none;
+}
+.chip input:checked + span{
+  border-color:var(--viridis);background:rgba(0,209,95,.10);color:var(--pine);font-weight:600;
+}
+.chip input:focus-visible + span{box-shadow:0 0 0 3px rgba(0,209,95,.25)}
+
+.actions{margin-top:34px;padding-top:26px;border-top:1px solid #E4E4E6}
+.btn{
+  width:100%;padding:16px 24px;border:0;border-radius:12px;cursor:pointer;
+  font-family:var(--font);font-size:16px;font-weight:700;color:#00351a;
+  background:linear-gradient(90deg,var(--viridis) 0%,var(--mint) 100%);
+  transition:transform .12s, box-shadow .15s, opacity .15s;
+  box-shadow:0 8px 22px rgba(0,209,95,.32);
+}
+.btn:hover:not(:disabled){transform:translateY(-1px);box-shadow:0 12px 28px rgba(0,209,95,.40)}
+.btn:disabled{opacity:.6;cursor:not-allowed;box-shadow:none}
+.formnote{margin-top:14px;font-size:12.5px;color:var(--french-grey);text-align:center}
+.banner{
+  display:none;margin-bottom:22px;padding:14px 16px;border-radius:10px;
+  font-size:14px;font-weight:500;border-left:4px solid var(--ignis);
+  background:rgba(237,43,61,.07);color:#8e1420;
+}
+.banner.show{display:block}
+
+/* ---------- SUCCESS ---------- */
+.success{display:none;text-align:center;padding:26px 8px 12px}
+.success.show{display:block}
+.tick{
+  width:76px;height:76px;margin:0 auto 22px;border-radius:50%;
+  background:linear-gradient(135deg,var(--viridis),var(--teal));
+  display:grid;place-items:center;box-shadow:0 10px 30px rgba(0,209,95,.32);
+}
+.tick svg{width:36px;height:36px;stroke:#fff;stroke-width:3.2;fill:none}
+.success h2{font-size:26px;font-weight:800;color:var(--black);letter-spacing:-.02em}
+.success p{margin-top:12px;color:var(--dark-mineral);font-size:15.5px;max-width:480px;margin-left:auto;margin-right:auto}
+.linkbtn{
+  display:inline-block;margin-top:24px;padding:11px 22px;border-radius:10px;
+  border:1.5px solid #DCDCDE;background:#fff;color:var(--black);
+  font-weight:600;font-size:14.5px;cursor:pointer;font-family:var(--font);
+}
+.linkbtn:hover{border-color:var(--viridis);color:var(--pine)}
+
+footer{padding:26px 24px 44px;text-align:center;color:var(--french-grey);font-size:12.5px}
+footer a{color:var(--dark-mineral);text-decoration:none;border-bottom:1px solid #DCDCDE}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="brandbar">
+      <!-- Official Veeam logo (Veeam_logo_2026_CMYK_main.ai), converted to vector
+           and set to the brand Viridis green #00D15F. Also saved alongside this
+           file as veeam-logo.svg if you prefer to reference it externally. -->
+      <a class="logo" href="https://www.veeam.com" target="_blank" rel="noopener" aria-label="Veeam">
+        <svg role="img" aria-label="Veeam" xmlns="http://www.w3.org/2000/svg" viewBox="49 46 321 97">
+        <g>
+        <path fill="#00D15F" d="M 53.003906 65.890625 C 50.992188 67.90625 49.859375 70.648438 49.859375 73.5 L 49.859375 142.308594 L 342.378906 142.308594 C 345.226562 142.308594 347.964844 141.171875 349.980469 139.160156 L 366.089844 123.035156 C 368.105469 121.019531 369.238281 118.273438 369.238281 115.425781 L 369.25 46.433594 L 76.902344 46.433594 C 74.054688 46.433594 71.3125 47.570312 69.300781 49.582031 Z M 53.003906 65.890625 "/>
+        <path fill="#FFFFFF" d="M 94.578125 117.46875 L 72.511719 71.355469 L 82.460938 71.355469 C 82.460938 71.355469 98.230469 104.367188 98.613281 106.039062 L 98.808594 106.039062 C 99.203125 104.367188 114.964844 71.355469 114.964844 71.355469 L 125.003906 71.355469 L 102.941406 117.46875 Z M 94.578125 117.46875 "/>
+        <path fill="#FFFFFF" d="M 132.105469 90.457031 L 158.59375 90.457031 C 158.003906 84.148438 152.886719 78.640625 145.894531 78.640625 C 138.796875 78.628906 133.472656 83.269531 132.105469 90.457031 M 167.746094 97.949219 L 132.007812 97.949219 C 133.292969 105.4375 138.796875 110.164062 145.894531 110.164062 C 151.707031 110.164062 155.539062 107.890625 157.511719 103.660156 L 166.761719 103.660156 C 164 112.425781 156.03125 118.433594 145.882812 118.433594 C 132.488281 118.433594 122.648438 108.683594 122.648438 94.390625 C 122.648438 80.203125 132.296875 70.347656 145.882812 70.347656 C 157.992188 70.347656 167.9375 80.695312 167.9375 94.390625 C 167.9375 95.773438 167.9375 96.566406 167.746094 97.949219 "/>
+        <path fill="#FFFFFF" d="M 181.128906 90.457031 L 207.617188 90.457031 C 207.027344 84.148438 201.910156 78.640625 194.917969 78.640625 C 187.820312 78.628906 182.511719 83.269531 181.128906 90.457031 M 216.769531 97.949219 L 181.03125 97.949219 C 182.316406 105.4375 187.820312 110.164062 194.917969 110.164062 C 200.730469 110.164062 204.566406 107.890625 206.535156 103.660156 L 215.785156 103.660156 C 213.023438 112.425781 205.058594 118.433594 194.90625 118.433594 C 181.515625 118.433594 171.675781 108.683594 171.675781 94.390625 C 171.675781 80.203125 181.320312 70.347656 194.90625 70.347656 C 207.015625 70.347656 216.964844 80.695312 216.964844 94.390625 C 216.964844 95.773438 216.964844 96.566406 216.769531 97.949219 "/>
+        <path fill="#FFFFFF" d="M 257.820312 94.402344 C 257.820312 84.253906 251.128906 78.640625 243.933594 78.640625 C 236.050781 78.640625 229.660156 84.953125 229.660156 94.402344 C 229.660156 103.863281 235.570312 110.164062 243.933594 110.164062 C 251.03125 110.164062 257.820312 104.25 257.820312 94.402344 M 266.886719 94.402344 L 266.886719 117.460938 L 258.910156 117.460938 L 258.117188 110.269531 C 254.574219 115.59375 248.375 118.445312 242.753906 118.445312 C 230.152344 118.445312 220.601562 108.394531 220.601562 94.402344 C 220.601562 80.613281 230.839844 70.359375 243.933594 70.359375 C 255.957031 70.359375 266.886719 79.027344 266.886719 94.402344 "/>
+        <path fill="#FFFFFF" d="M 272.988281 117.460938 L 272.988281 90.167969 C 272.988281 78.640625 280.375 70.367188 291.898438 70.367188 C 301.148438 70.367188 306.070312 76.570312 306.769531 78.746094 L 306.960938 78.746094 C 307.648438 76.582031 312.570312 70.367188 321.832031 70.367188 C 333.351562 70.367188 340.738281 78.640625 340.738281 90.167969 L 340.738281 117.460938 L 331.683594 117.460938 L 331.683594 90.855469 C 331.683594 83.367188 328.332031 78.832031 321.542969 78.832031 C 314.742188 78.832031 311.402344 83.367188 311.402344 91.046875 L 311.402344 117.558594 L 302.347656 117.558594 L 302.347656 91.046875 C 302.347656 83.363281 298.996094 78.832031 292.207031 78.832031 C 285.417969 78.832031 282.066406 83.367188 282.066406 90.855469 L 282.066406 117.460938 Z M 272.988281 117.460938 "/>
+        </g>
+        </svg>
+      </a>
+      <span class="pill" id="statusPill">Nominations open</span>
+    </div>
+
+    <h1>Veeam Army 2026<br><span class="grad">South — Chennai</span></h1>
+    <p class="lede">A hands-on enablement program for partner engineers across the South region, running <strong>27 &amp; 28 August 2026</strong>. Submit your nomination below — places are limited and confirmed on a first-reviewed basis.</p>
+
+    <div class="facts">
+      <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 11h18"/></svg> 27 &amp; 28 August 2026</span>
+      <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M12 21s-7-5.2-7-10a7 7 0 1114 0c0 4.8-7 10-7 10z"/><circle cx="12" cy="11" r="2.5"/></svg> Chennai</span>
+      <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2"/><circle cx="9.5" cy="7" r="4"/><path d="M22 21v-2a4 4 0 00-3-3.87"/></svg> Partners only</span>
+      <span class="fact"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M12 2l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17l-5.9 3 1.2-6.5L2.5 8.9 9.1 8z"/></svg> Limited seats</span>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ AGENDA ============
+       Add or remove <li> lines to change the topics — they renumber themselves.
+       Day timings live in the <p class="date"> line of each day. -->
+  <div class="agenda-card">
+    <div class="agenda-head">
+      <h2>Agenda</h2>
+      <span>Two days · 27 &amp; 28 August 2026</span>
+    </div>
+    <div class="days">
+
+      <div class="day">
+        <span class="day-tag">Day 1</span>
+        <h3>Foundation</h3>
+        <p class="date">Thursday 27 August 2026 &nbsp;·&nbsp; 10:00 AM – 5:00 PM</p>
+        <ol>
+          <li>Basic Understanding of Backup</li>
+          <li>Veeam Fundamentals &amp; Values</li>
+          <li>Veeam Data Platform (VDP)</li>
+          <li>Veeam Software Appliance (VSA)</li>
+          <li>Veeam Infrastructure Appliance (VIA)</li>
+          <li>Demo</li>
+        </ol>
+      </div>
+
+      <div class="day">
+        <span class="day-tag">Day 2</span>
+        <h3>Deep dive</h3>
+        <p class="date">Friday 28 August 2026 &nbsp;·&nbsp; 10:00 AM – 4:00 PM</p>
+        <ol>
+          <li>Veeam ONE</li>
+          <li>Veeam Recovery Orchestrator (VRO)</li>
+          <li>End to End Resiliency</li>
+          <li>What's new in v13.1</li>
+          <li>Veeam Data Cloud (VDC)</li>
+          <li>Demo</li>
+        </ol>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="card">
+
+    <!-- ============ SUCCESS STATE ============ -->
+    <div class="success" id="successState">
+      <div class="tick"><svg viewBox="0 0 24 24"><path d="M4 12.5l5.5 5.5L20 7"/></svg></div>
+      <h2>Nomination received</h2>
+      <p>Thank you — your nomination for <strong>Veeam Army 2026 South — Chennai</strong> has been recorded. Places are limited, so nominations are reviewed before seats are confirmed. The program team will email you at the address you provided with your confirmed place, the venue and joining details ahead of the training on <strong>27 &amp; 28 August 2026</strong>.</p>
+      <button class="linkbtn" type="button" onclick="location.reload()">Submit another nomination</button>
+    </div>
+
+    <!-- ============ CLOSED STATE (shown automatically after the deadline) ============ -->
+    <div class="closed" id="closedState">
+      <div class="closed-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div>
+      <h2>Nominations are now closed</h2>
+      <p>Registration for <strong>Veeam Army 2026 South — Chennai</strong> closed on <span data-deadline-text></span>. If you still need to be considered, contact <a href="mailto:s.mondal@veeam.com">s.mondal@veeam.com</a> directly.</p>
+    </div>
+
+    <!-- ============ FORM ============
+         Submits to a Google Apps Script web app, which writes each nomination
+         into your Google Sheet. Works from any host — GitHub Pages, Netlify,
+         Cloudflare, a plain web server. Nothing host-specific. -->
+    <form id="regForm" method="POST" novalidate>
+
+      <!-- spam honeypot: invisible to people, but bots fill in every field
+           they find. The Apps Script silently discards any submission where
+           _gotcha has a value. Do not remove. -->
+      <p class="hp"><label>Leave this field empty <input name="_gotcha" tabindex="-1" autocomplete="off"></label></p>
+
+      <!-- Deadline notice — first thing inside the form, so nobody starts
+           filling it in without seeing the cut-off. -->
+      <div class="deadline">
+        <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+        <div class="deadline-body">
+          Nominations close <strong data-deadline-text></strong>.<span class="countdown" id="countdown"></span><br>
+          Training runs <strong>27 &amp; 28 August 2026</strong>. Late nominations can't be guaranteed a seat.
+        </div>
+      </div>
+
+      <!-- Venue — update EVENT.VENUE_TEXT once the location is confirmed -->
+      <div class="venue">
+        <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.2-7-10a7 7 0 1114 0c0 4.8-7 10-7 10z"/><circle cx="12" cy="11" r="2.5"/></svg>
+        <div><strong>Venue</strong> — <span data-venue-text></span>
+          <a id="venueMap" href="#" target="_blank" rel="noopener" style="display:none">View on map →</a>
+        </div>
+      </div>
+
+      <div class="banner" id="banner"></div>
+
+      <!-- 1. NOMINEE DETAILS -->
+      <div class="section">
+        <div class="section-head"><span class="step">1</span><h2>Nominee details</h2></div>
+        <div class="grid">
+          <div>
+            <label for="fullName">Full name<span class="req">*</span></label>
+            <input type="text" id="fullName" name="fullName" autocomplete="name" placeholder="Jane Doe">
+            <div class="err" data-for="fullName">Please enter your full name.</div>
+          </div>
+          <div>
+            <label for="email">Work email<span class="req">*</span></label>
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="jane.doe@company.com">
+            <div class="err" data-for="email">Please enter a valid work email address.</div>
+          </div>
+          <div>
+            <label for="phone">Mobile / phone<span class="req">*</span></label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+91 98765 43210">
+            <div class="err" data-for="phone">Please enter a contact number.</div>
+          </div>
+          <div>
+            <label for="jobTitle">Job title<span class="req">*</span></label>
+            <input type="text" id="jobTitle" name="jobTitle" autocomplete="organization-title" placeholder="Solutions Engineer">
+            <div class="err" data-for="jobTitle">Please enter your job title.</div>
+          </div>
+          <div class="full">
+            <label for="company">Partner organisation name<span class="req">*</span></label>
+            <input type="text" id="company" name="company" autocomplete="organization" placeholder="Contoso Technologies Pvt. Ltd.">
+            <div class="err" data-for="company">Please enter your partner organisation name.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. LOCATION -->
+      <div class="section">
+        <div class="section-head"><span class="step">2</span><h2>Location</h2></div>
+        <div class="grid">
+          <div>
+            <label for="city">City<span class="req">*</span></label>
+            <input type="text" id="city" name="city" autocomplete="address-level2" placeholder="New Delhi">
+            <div class="err" data-for="city">Please enter your city.</div>
+          </div>
+          <div>
+            <label for="country">Country / region<span class="req">*</span></label>
+            <input type="text" id="country" name="country" autocomplete="country-name" placeholder="India">
+            <div class="err" data-for="country">Please enter your country or region.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. EXPERIENCE & REQUIREMENTS -->
+      <div class="section">
+        <div class="section-head"><span class="step">3</span><h2>Experience &amp; requirements</h2></div>
+        <div class="grid">
+          <div class="full">
+            <span class="grouplabel">Any past experience with Veeam?<span class="req">*</span></span>
+            <div class="chips" data-group="veeamExp">
+              <label class="chip"><input type="radio" name="veeamExp" value="Yes"><span>Yes</span></label>
+              <label class="chip"><input type="radio" name="veeamExp" value="No"><span>No</span></label>
+            </div>
+            <div class="err" data-for="veeamExp">Please select Yes or No.</div>
+          </div>
+          <div class="full">
+            <label for="years">Years of IT / data protection experience<span class="req">*</span></label>
+            <select id="years" name="years">
+              <option value="">Select…</option>
+              <option>Less than 1 year</option>
+              <option>1–3 years</option>
+              <option>3–5 years</option>
+              <option>5–10 years</option>
+              <option>More than 10 years</option>
+            </select>
+            <div class="err" data-for="years">Please select your experience level.</div>
+          </div>
+          <div class="full">
+            <span class="grouplabel">Dietary preference<span class="req">*</span></span>
+            <div class="chips" data-group="dietary">
+              <label class="chip"><input type="radio" name="dietary" value="Veg"><span>Veg</span></label>
+              <label class="chip"><input type="radio" name="dietary" value="Non-Veg"><span>Non-Veg</span></label>
+            </div>
+            <div class="err" data-for="dietary">Please select a dietary preference.</div>
+          </div>
+          <div class="full">
+            <div class="checkline">
+              <input type="checkbox" id="consent" name="consent" value="Yes">
+              <label for="consent">I consent to Veeam processing the details above for the purpose of administering this training program.<span class="req">*</span></label>
+            </div>
+            <div class="err" data-for="consent">Consent is required to submit this form.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button class="btn" type="submit" id="submitBtn">Submit nomination</button>
+        <p class="formnote">Fields marked <span style="color:var(--ignis)">*</span> are required. The program team will confirm your place by email.<br>Nominations close <span data-deadline-text></span>.</p>
+      </div>
+    </form>
+  </div>
+</main>
+
+<footer>
+  Veeam Army 2026 South — Chennai &nbsp;·&nbsp; Partner enablement program &nbsp;·&nbsp; Questions? <a href="mailto:s.mondal@veeam.com">s.mondal@veeam.com</a>
+</footer>
+
+
+<script>
+/* ==================================================================
+   CONFIG — you change ONE line here before publishing.
+   ==================================================================
+
+   Nominations are stored in a Google Sheet you own, via a Google Apps
+   Script web app. Unlimited submissions, free forever, no third-party
+   form service in the middle.
+
+   Setup is in SETUP-GUIDE.md — in short:
+     1. Create a Google Sheet
+     2. Extensions → Apps Script, paste in google-apps-script.gs
+     3. Deploy → New deployment → Web app → Anyone
+     4. Paste the /exec URL it gives you as ENDPOINT below
+
+   MODE options:
+     'live' → real submissions, written to your sheet
+     'demo' → no backend, just shows the success screen
+*/
+const CONFIG = {
+  MODE: 'live',
+  ENDPOINT: 'PASTE_YOUR_CHENNAI_APPS_SCRIPT_URL_HERE'
+};
+
+/* ---------------- EVENT DATES — change these if the schedule moves ----------------
+
+   DEADLINE_ISO drives the countdown and the automatic close.
+   The +05:30 on the end is India Standard Time. If the cut-off is meant to be
+   a different timezone, change that offset (e.g. +00:00 for UTC, +01:00 CET).
+
+   AUTO_CLOSE: true  → after the deadline the form is replaced by a
+                       "Nominations are now closed" message, automatically.
+               false → the form stays open indefinitely; the notice still shows.
+*/
+const EVENT = {
+  DEADLINE_ISO:  '2026-08-25T21:00:00+05:30',
+  DEADLINE_TEXT: 'Tuesday 25 August 2026, 9:00 PM IST',
+  AUTO_CLOSE:    true,
+
+  VENUE_TEXT:    'Chennai. The exact address will be shared with you once your ' +
+                 'registration is confirmed.',
+
+  // No map link until the venue is announced. Once you have the address, put it
+  // in VENUE_TEXT above and set this to:
+  //   'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent('full address here')
+  VENUE_MAP_URL: ''
+};
+/* ================== END CONFIG — no edits needed below ================== */
+
+const form    = document.getElementById('regForm');
+const banner  = document.getElementById('banner');
+const btn     = document.getElementById('submitBtn');
+const success = document.getElementById('successState');
+
+// ---------------------------------------------------------------- deadline
+// Fills in the deadline text everywhere it appears, shows a countdown, and
+// closes the form once the cut-off has passed.
+(function initDeadline(){
+  document.querySelectorAll('[data-deadline-text]').forEach(el => {
+    el.textContent = EVENT.DEADLINE_TEXT;
+  });
+  document.querySelectorAll('[data-venue-text]').forEach(el => {
+    el.textContent = EVENT.VENUE_TEXT;
+  });
+  const map = document.getElementById('venueMap');
+  if (map && EVENT.VENUE_MAP_URL) {
+    map.href = EVENT.VENUE_MAP_URL;
+    map.style.display = 'inline-block';
+  }
+
+  const deadline = new Date(EVENT.DEADLINE_ISO);
+  if (isNaN(deadline)) return;                 // bad date — fail safe, stay open
+
+  const msLeft = deadline.getTime() - Date.now();
+  const cd     = document.getElementById('countdown');
+
+  if (msLeft <= 0) {
+    if (cd) { cd.textContent = 'Closed'; cd.classList.add('urgent'); }
+    if (EVENT.AUTO_CLOSE) {
+      form.style.display = 'none';
+      document.getElementById('closedState').classList.add('show');
+      const pill = document.getElementById('statusPill');
+      if (pill) pill.textContent = 'Nominations closed';
+    }
+    return;
+  }
+
+  if (!cd) return;
+  const hoursLeft = msLeft / 36e5;
+  const daysLeft  = Math.ceil(hoursLeft / 24);
+
+  if (hoursLeft < 1)       cd.textContent = 'Closing within the hour';
+  else if (hoursLeft < 24) cd.textContent = Math.floor(hoursLeft) + ' hours left';
+  else                     cd.textContent = daysLeft + ' days left';
+
+  if (daysLeft <= 2) cd.classList.add('urgent');
+})();
+
+const TEXT_FIELDS = ['fullName','email','phone','jobTitle','company','city','country',
+                     'veeamExp','years','dietary'];
+const REQUIRED = TEXT_FIELDS.concat(['consent']);
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+
+// form.elements[name] returns a RadioNodeList for radio groups — normalise it
+function firstNode(el){
+  if (!el) return null;
+  if (el instanceof Element) return el;
+  return el[0] || null;
+}
+
+function fieldError(name, show){
+  const el  = form.elements[name];
+  const msg = document.querySelector('.err[data-for="'+name+'"]');
+  const grp = document.querySelector('.chips[data-group="'+name+'"]');
+  if (el instanceof Element && el.type !== 'checkbox') el.classList.toggle('invalid', show);
+  if (grp) grp.classList.toggle('invalid-group', show);
+  if (msg) msg.classList.toggle('show', show);
+}
+
+function validate(){
+  let firstBad = null;
+  REQUIRED.forEach(name => {
+    const el = form.elements[name];
+    let bad;
+    if (el instanceof Element && el.type === 'checkbox')   bad = !el.checked;
+    else if (el instanceof Element && el.type === 'email') bad = !EMAIL_RE.test(el.value.trim());
+    else                                                   bad = String(el.value || '').trim() === '';
+    fieldError(name, bad);
+    if (bad && !firstBad) firstBad = firstNode(el);
+  });
+  if (firstBad){
+    banner.textContent = 'Please complete the highlighted fields before submitting.';
+    banner.classList.add('show');
+    firstBad.scrollIntoView({behavior:'smooth', block:'center'});
+    try { firstBad.focus({preventScroll:true}); } catch(e){}
+    return false;
+  }
+  banner.classList.remove('show');
+  return true;
+}
+
+// clear a field's error as soon as the user fixes it
+['input','change'].forEach(evt => form.addEventListener(evt, e => {
+  if (e.target.name && REQUIRED.includes(e.target.name)) fieldError(e.target.name, false);
+}));
+
+function collect(){
+  const fd = new FormData(form);
+  const data = {};
+  data._gotcha = (fd.get('_gotcha') || '').toString();
+  TEXT_FIELDS.forEach(k => { data[k] = (fd.get(k) || '').toString().trim(); });
+  data.consent     = form.elements.consent.checked ? 'Yes' : 'No';
+  data.training    = 'Veeam Army 2026 - South Chennai';
+  data.submittedAt = new Date().toISOString();
+  return data;
+}
+
+// Posted over AJAX so the visitor stays on the page and sees the success screen.
+//
+// Note the Content-Type: 'text/plain'. That is deliberate, not a mistake.
+// It keeps this a CORS "simple request" so the browser skips the preflight
+// OPTIONS call, which Google Apps Script does not answer. The script reads
+// the raw body with JSON.parse(e.postData.contents), so it still gets JSON.
+async function sendToSheet(data){
+  if (CONFIG.ENDPOINT.indexOf('PASTE_YOUR') === 0) throw new Error('NOT_CONFIGURED');
+  // Guard against pointing Chennai at the North sheet by mistake.
+
+  const res = await fetch(CONFIG.ENDPOINT, {
+    method: 'POST',
+    headers: {'Content-Type':'text/plain;charset=utf-8'},
+    body: JSON.stringify(data),
+    redirect: 'follow'
+  });
+  if (!res.ok) throw new Error('Sheet endpoint responded ' + res.status);
+
+  const out = await res.json().catch(() => null);
+  if (!out || out.ok !== true) {
+    throw new Error('Sheet rejected the row' + (out && out.error ? ': ' + out.error : ''));
+  }
+  return true;
+}
+
+form.addEventListener('submit', async e => {
+  e.preventDefault();
+  if (!validate()) return;
+
+  btn.disabled = true;
+  btn.textContent = 'Submitting…';
+  const data = collect();
+
+  try {
+    if (CONFIG.MODE === 'live') await sendToSheet(data);
+    else console.log('[demo mode] nomination payload:', data);
+
+    form.style.display = 'none';
+    success.classList.add('show');
+    window.scrollTo({top:0, behavior:'smooth'});
+  } catch (err) {
+    console.error('[nomination form]', err);
+    banner.textContent = err.message === 'NOT_CONFIGURED'
+      ? 'This form isn’t connected yet — CONFIG.ENDPOINT still has the placeholder in it. See SETUP-GUIDE.md.'
+      : 'Something went wrong submitting the form. Please try again, or email your details to s.mondal@veeam.com.';
+    banner.classList.add('show');
+    banner.scrollIntoView({behavior:'smooth', block:'center'});
+    btn.disabled = false;
+    btn.textContent = 'Submit nomination';
+  }
+});
+</script>
+</body>
+</html>
